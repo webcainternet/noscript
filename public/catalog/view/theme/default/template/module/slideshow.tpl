@@ -1,3 +1,4 @@
+
 <div id="slideshow<?php echo $module; ?>" class="flexslider">
   <ul class="slides">
     <?php foreach ($banners as $banner) { ?>
@@ -9,10 +10,13 @@
     <?php } ?>
   </ul>
 </div>
+
+
+
 <script type="text/javascript"><!--
 $('#slideshow<?php echo $module; ?>').flexslider({
-	animation: 'slide',
-	animationLoop: true,
-	itemWidth: <?php echo $width; ?>
+  animation: 'slide',
+  animationLoop: true,
+  itemWidth: <?php echo $width; ?>
 });
 --></script>

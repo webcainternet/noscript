@@ -43,9 +43,13 @@
   <div class="container">
     <?php echo $currency; ?>
     <?php echo $language; ?>
+    <div id="top-links" class="nav pull-left">
+      <ul class="list-inline">
+        <li>Precisa de ajuda? &nbsp;&nbsp;<a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+      </ul>
+    </div>
     <div id="top-links" class="nav pull-right">
       <ul class="list-inline">
-        <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
         <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
           <ul class="dropdown-menu dropdown-menu-right">
             <?php if ($logged) { ?>
@@ -60,9 +64,9 @@
             <?php } ?>
           </ul>
         </li>
-        <li><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li>
+        <?php /* <li><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li> */ ?>
         <li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
-        <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
+        <?php /* <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li> */ ?>
       </ul>
     </div>
   </div>
@@ -86,12 +90,20 @@
   </div>
 </header>
 <?php if ($categories) { ?>
-<div class="container">
+<div class="container" style="display: none;">
   <nav id="menu" class="navbar">
     <div class="navbar-header"><span id="category" class="visible-xs"><?php echo $text_category; ?></span>
       <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
     </div>
     <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a href="http://noscript.com.br/desktops" class="dropdown-toggle" data-toggle="dropdown">Loja Virtual</a></li>
+        <li class="dropdown"><a href="http://noscript.com.br/desktops" class="dropdown-toggle" data-toggle="dropdown">Desenvolvimento Web</a></li>
+        <li class="dropdown"><a href="http://noscript.com.br/desktops" class="dropdown-toggle" data-toggle="dropdown">Cases e Clientes</a></li>
+        <li class="dropdown"><a href="http://noscript.com.br/desktops" class="dropdown-toggle" data-toggle="dropdown">Infraestrutura</a></li>
+        <li class="dropdown"><a href="http://noscript.com.br/desktops" class="dropdown-toggle" data-toggle="dropdown">Sobre nós</a></li>
+      </ul>
+      <?php /*
       <ul class="nav navbar-nav">
         <?php foreach ($categories as $category) { ?>
         <?php if ($category['children']) { ?>
@@ -113,6 +125,7 @@
         <?php } ?>
         <?php } ?>
       </ul>
+      */ ?>
     </div>
   </nav>
 </div>

@@ -1,9 +1,9 @@
 body {
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
-	color: #666;
-	font-size: 12px;
-	line-height: 20px;
+font-weight: 400;
+color: #666;
+font-size: 12px;
+line-height: 20px;
 }
 h1, h2, h3, h4, h5, h6 {
 	color: #444;
@@ -293,7 +293,7 @@ div.required .control-label:before {
 }
 /* content */
 #content {
-	min-height: 600px;
+	min-height: 445px;
 }
 /* footer */
 footer {
@@ -700,4 +700,246 @@ h2.price {
 }
 .flex-direction-nav a:before {
 	line-height: 40px;
+}
+
+/* WebCA Custom */
+.col-center {
+	text-align: center;
+}
+
+
+
+
+/* Home preços */
+.first-decision ul {
+    list-style-type: none;
+    margin: 25px 0px;
+    padding: 0px;
+    text-align: center;
+    color: #333;
+  }
+  .first-decision .title {
+    font-size: 36px;
+    height: 50px;
+  }
+  .first-decision .bullet-item {
+    border-top: 1px solid #EFEFEF;
+    font-size: 20px;
+    padding: 15px 0;
+  } 
+  .first-decision .prices {
+    border-top: 1px solid #EFEFEF;
+    width: 100%;
+  }
+  .first-decision .price-inline {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    height: 100px;
+  }
+  .first-decision .button-more-info {
+    float: left;
+    margin-top: 22px;
+    margin-left: 25px;
+  }
+  .first-decision .pricetag-large, .first-decision .pricetag {
+    float: left;
+  }
+
+  .pricetag {
+    color:#000;
+    height:75px;
+    display:inline-block;
+  }
+  .pricetag .price-before {
+    font-size:18px;
+    line-height:18px;
+    float:left;
+    height:26px;
+    margin-top:49px;
+  }
+  .pricetag .price-1 {
+    font-size:75px;
+    line-height:75px;
+    /*font-weight:bold;*/
+    float:left;
+    position:relative;
+    height:75px;
+  }
+  .pricetag .right-box {
+    float:left;
+  }
+  .pricetag .price-2 {
+    font-size:40px;
+    line-height:49px;
+    /*font-weight:bold;*/
+    text-align:left;
+    height:49px;
+  }
+  .pricetag .price-after {
+    font-size:18px;
+    line-height:18px;
+    height:26px;
+  }
+  .pricetag-large {
+    color:#000;
+    height:100px;
+    display:inline-block;
+  }
+  .pricetag-large .price-before {
+    font-size:24px;
+    line-height:24px;
+    float:left;
+    height:35px;
+    margin-top:65px;
+  }
+  .pricetag-large .price-1 {
+    font-size:100px;
+    line-height:100px;
+    /*font-weight:bold;*/
+    float:left;
+    position:relative;
+    height:100px;
+  }
+  .pricetag-large .right-box {
+    float:left;
+  }
+  .pricetag-large .price-2 {
+    font-size:54px;
+    line-height:65px;
+    /*font-weight:bold;*/
+    text-align:left;
+    height:65px;
+  }
+  .pricetag-large .price-after {
+    font-size:24px;
+    line-height:24px;
+    height:35px;
+  }
+
+  .btn-wca {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: #f08c00;
+    color: #000;
+    border: 0;
+    font-size: 16px;
+    padding: 10px 25px;
+    /* border-radius: 0px; */
+    font-weight: 900;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select
+  }
+
+
+
+
+
+/* WebCA Contato Home */
+.container-contato {
+	background-color: #f6ae3b;
+	height: 150px;
+	margin-bottom: 0px;
+	  background: -webkit-radial-gradient(#f6ae3b, #f6ae3b); /* Safari 5.1 to 6.0 */
+	  background: -o-radial-gradient(#f6ae3b, #f6ae3b); /* For Opera 11.6 to 12.0 */
+	  background: -moz-radial-gradient(#f6ae3b, #f6ae3b); /* For Firefox 3.6 to 15 */
+	  background: radial-gradient(#f6ae3b, #f6ae3b); /* Standard syntax */
+}
+
+.content-incluso {
+	background-color: #EEEEEE;
+	padding-bottom: 20px;
+}
+
+
+
+
+
+/* WebCA info Home */
+.container-info {
+	background-color: #171314;
+	height: 550px;
+	margin-bottom: 30px;
+
+  background: -webkit-radial-gradient(#322c2d, #171314); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#322c2d, #171314); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#322c2d, #171314); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#322c2d, #171314); /* Standard syntax */
+}
+
+
+
+/* WebCA passos Home */
+.container-info2 {
+	background-color: #FFFFFF;
+	margin-bottom: 30px;
+}
+
+.container-passos {
+	float: left;
+	margin: 30px;
+	width: 320px;
+	text-align: center;
+}
+.container-passos-img {
+	border-radius: 200px;
+	width: 200px;
+	height: 200px;
+	background-color: #EEEEEE;
+	margin: auto;
+}
+.container-passos-titulo {
+	font-size: 20px;
+	padding: 15px;
+	color: #333;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+
+}
+
+/* WebCA newsletter */
+.newsletter-col {
+	float: left;
+	margin: 10px;
+}
+.newsletter-col-1 {
+	width: 460px;
+	font-size: 32px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	line-height: 35px;
+	text-align: right;
+	padding-top: 25px;
+}
+.newsletter-col-2 {
+	width: 620px;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	padding-top: 31px;
+}
+.newsletter-nome {
+	height: 42px;
+}
+.newsletter-ddd {
+	width: 40px;
+	height: 42px;
+}
+.newsletter-telefone {
+	width: 195px;
+	height: 42px;
+
 }
