@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Nov 24, 2014 at 11:28 PM
+-- Generation Time: Nov 26, 2014 at 06:57 AM
 -- Server version: 5.5.38
 -- PHP Version: 5.3.29
 
@@ -277,13 +277,15 @@ CREATE TABLE `oc_banner_image` (
   `link` varchar(255) NOT NULL,
   `image` varchar(255) NOT NULL,
   `sort_order` int(3) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM AUTO_INCREMENT=103 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=105 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `oc_banner_image`
 --
 
 INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `link`, `image`, `sort_order`) VALUES
+(103, 7, '', 'catalog/banners/slider/slider1-blue.png', 0),
+(104, 7, 'index.php?route=product/product&amp;path=57&amp;product_id=49', 'catalog/banners/slider/slider1.png', 0),
 (87, 6, 'index.php?route=product/manufacturer/info&amp;manufacturer_id=7', 'catalog/demo/compaq_presario.jpg', 0),
 (94, 8, '', 'catalog/demo/manufacturer/nfl.png', 0),
 (95, 8, '', 'catalog/demo/manufacturer/redbull.png', 0),
@@ -294,10 +296,8 @@ INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `link`, `image`, 
 (88, 8, '', 'catalog/demo/manufacturer/harley.png', 0),
 (89, 8, '', 'catalog/demo/manufacturer/dell.png', 0),
 (90, 8, '', 'catalog/demo/manufacturer/disney.png', 0),
-(102, 7, '', 'catalog/banners/slider/slider1.png', 0),
 (97, 8, '', 'catalog/demo/manufacturer/starbucks.png', 0),
-(98, 8, '', 'catalog/demo/manufacturer/nintendo.png', 0),
-(101, 7, 'index.php?route=product/product&amp;path=57&amp;product_id=49', 'catalog/banners/slider/slider1.png', 0);
+(98, 8, '', 'catalog/demo/manufacturer/nintendo.png', 0);
 
 -- --------------------------------------------------------
 
@@ -317,14 +317,14 @@ CREATE TABLE `oc_banner_image_description` (
 --
 
 INSERT INTO `oc_banner_image_description` (`banner_image_id`, `language_id`, `banner_id`, `title`) VALUES
-(102, 2, 7, 'MacBookAir'),
+(104, 2, 7, 'iPhone 6'),
 (87, 2, 6, 'HP Banner'),
 (93, 2, 8, 'Canon'),
 (92, 2, 8, 'Burger King'),
 (91, 2, 8, 'Coca Cola'),
 (90, 2, 8, 'Disney'),
 (89, 2, 8, 'Dell'),
-(101, 2, 7, 'iPhone 6'),
+(103, 2, 7, 'MacBookAir'),
 (88, 2, 8, 'Harley Davidson'),
 (94, 2, 8, 'NFL'),
 (95, 2, 8, 'RedBull'),
@@ -1157,7 +1157,7 @@ CREATE TABLE `oc_customer_online` (
 --
 
 INSERT INTO `oc_customer_online` (`ip`, `customer_id`, `url`, `referer`, `date_added`) VALUES
-('127.0.0.1', 0, 'http://noscript.com.br/', '', '2014-11-24 22:29:01');
+('127.0.0.1', 0, 'http://noscript.com.br/', '', '2014-11-25 21:35:40');
 
 -- --------------------------------------------------------
 
@@ -2303,7 +2303,7 @@ INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `is
 (36, 'Product 9', '', '', '', '', '', '', '', 994, 6, 'catalog/demo/ipod_nano_1.jpg', 8, 0, 100.0000, 100, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, 0, '2009-02-03 18:09:19', '2011-09-30 01:07:12'),
 (40, 'product 11', '', '', '', '', '', '', '', 966, 5, 'catalog/demo/iphone_1.jpg', 8, 1, 101.0000, 0, 9, '2009-02-03', 10.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, 2, '2009-02-03 21:07:12', '2011-09-30 01:06:53'),
 (41, 'Product 14', '', '', '', '', '', '', '', 977, 5, 'catalog/demo/imac_1.jpg', 8, 1, 100.0000, 0, 9, '2009-02-03', 5.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 1, 1, 1, 0, 1, 0, '2009-02-03 21:07:26', '2011-09-30 01:06:44'),
-(42, 'Product 15', '', '', '', '', '', '', '', 990, 5, 'catalog/demo/apple_cinema_30.jpg', 8, 1, 100.0000, 400, 9, '2009-02-04', 12.50000000, 1, 1.00000000, 2.00000000, 3.00000000, 1, 1, 2, 0, 1, 6, '2009-02-03 21:07:37', '2011-09-30 00:46:19'),
+(42, 'Product 15', '', '', '', '', '', '', '', 990, 5, 'catalog/demo/apple_cinema_30.jpg', 8, 1, 100.0000, 400, 9, '2009-02-04', 12.50000000, 1, 1.00000000, 2.00000000, 3.00000000, 1, 1, 2, 0, 1, 7, '2009-02-03 21:07:37', '2011-09-30 00:46:19'),
 (43, 'Product 16', '', '', '', '', '', '', '', 921, 5, 'catalog/demo/macbook_1.jpg', 8, 0, 500.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, 2, '2009-02-03 21:07:49', '2011-09-30 01:05:46'),
 (44, 'Product 17', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/macbook_air_1.jpg', 8, 1, 1000.0000, 0, 9, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, 0, '2009-02-03 21:08:00', '2011-09-30 01:05:53'),
 (45, 'Product 18', '', '', '', '', '', '', '', 998, 5, 'catalog/demo/macbook_pro_1.jpg', 8, 1, 2000.0000, 0, 100, '2009-02-03', 0.00000000, 1, 0.00000000, 0.00000000, 0.00000000, 2, 1, 1, 0, 1, 0, '2009-02-03 21:08:17', '2011-09-15 22:22:01'),
@@ -8568,7 +8568,7 @@ MODIFY `banner_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 -- AUTO_INCREMENT for table `oc_banner_image`
 --
 ALTER TABLE `oc_banner_image`
-MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=103;
+MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=105;
 --
 -- AUTO_INCREMENT for table `oc_category`
 --

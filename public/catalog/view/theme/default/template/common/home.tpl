@@ -16,11 +16,11 @@ body {
 
 
 
-<div style="background-color: white; height: 125px; opacity: 0.8; filter: alpha(opacity=80); margin-top: 14px;">
+<div style="background-color: rgba(242,242,242,0.80); height: 125px; opacity: 0.8; filter: alpha(opacity=80); margin-top: 14px;">
   <div class="container"> 
     
     <div style="float: left; width: 36%;">
-      <div style="font-weight: bold; margin-top: 15px; margin-bottom: 15px;">Sistema de administração</div>
+      <div style="font-weight: bold; margin-top: 15px; margin-bottom: 15px; padding-left: 20px;">Sistema de administração</div>
       <div style="text-align: center; display: inline-block; width: 33%; height: 40px;">
         <div><img src="/image/catalog/webca/home-nav-tools.png"></div>
         <div style="margin-top: 5px;">Conheça</div>
@@ -38,8 +38,8 @@ body {
     </div>
 
     <div style="float: left; width: 24%;">
-      <div style="font-weight: bold; margin-top: 15px; margin-bottom: 15px;">Templates</div>
-      <div style="text-align: center; display: inline-block; width: 50%; height: 40px;">
+      <div style="font-weight: bold; margin-top: 15px; margin-bottom: 15px; padding-left: 20px;">Templates</div>
+      <div style="text-align: center; display: inline-block; width: 50%; height: 40px; border-left: #AAA dotted 1px;">
         <div><img src="/image/catalog/webca/home-nav-template.png"></div>
         <div style="margin-top: 5px;">Modelos</div>
       </div>
@@ -51,8 +51,8 @@ body {
     </div>
 
     <div style="float: left; width: 36%;">
-      <div style="font-weight: bold; margin-top: 15px; margin-bottom: 15px;">Design responsivo</div>
-      <div style="text-align: center; display: inline-block; width: 33%; height: 40px;">
+      <div style="font-weight: bold; margin-top: 15px; margin-bottom: 15px; padding-left: 20px;">Design responsivo</div>
+      <div style="text-align: center; display: inline-block; width: 33%; height: 40px; border-left: #AAA dotted 1px;">
         <div><img src="/image/catalog/webca/home-nav-comp.png"></div>
         <div style="margin-top: 5px;">Computador</div>
       </div>
