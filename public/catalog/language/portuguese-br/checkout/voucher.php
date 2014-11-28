@@ -1,13 +1,13 @@
 <?php
 // Heading
-$_['heading_title'] = 'Use Gift Voucher';
+$_['heading_title'] = 'Usar vale presente';
 
 // Text
-$_['text_success']  = 'Success: Your gift voucher discount has been applied!';
+$_['text_success']  = 'Sucesso: Seu vale presente foi aplicado';
 
 // Entry
-$_['entry_voucher'] = 'Enter your gift voucher code here';
+$_['entry_voucher'] = 'Digite aqui seu vale presente';
 
 // Error
-$_['error_voucher'] = 'Warning: Gift Voucher is either invalid or the balance has been used up!';
-$_['error_empty']   = 'Warning: Please enter a voucher code!';
+$_['error_voucher'] = 'Atenção: Vale presente é inválido, expirou ou atingiu o seu limite de uso!';
+$_['error_empty']   = 'Atenção: Digite o vale presente!';

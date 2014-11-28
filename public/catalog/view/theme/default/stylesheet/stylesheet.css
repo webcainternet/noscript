@@ -867,12 +867,20 @@ h2.price {
 
 
 
+.container-tema {
+	background-color: #f6ae3b;
+	height: 100px;
+	margin: 0px;
+}
+
+
 
 /* WebCA info Home */
 .container-info {
 	background-color: #171314;
-	height: 550px;
+	height: 580px;
 	margin-bottom: 30px;
+	padding: 10px;
 
   background: -webkit-radial-gradient(#322c2d, #171314); /* Safari 5.1 to 6.0 */
   background: -o-radial-gradient(#322c2d, #171314); /* For Opera 11.6 to 12.0 */
@@ -943,3 +951,31 @@ h2.price {
 	height: 42px;
 
 }
+
+.wcainclusoitem {
+  float: left;
+  width: 33.33333333%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+}
+.wcainclusotitulo {
+  width: 310px;
+  margin-left: 15px;
+  float: right;
+}
+
+.wca-templatethumb {
+    display: inline-block;
+    width: 272px;
+    height: 272px;
+    background-size: 100%;
+    margin: 2px;
+    border: #333 solid 3px;
+  }
+  .wca-templatethumb:hover {
+    border: #f6ae3b solid 3px;
+  }
